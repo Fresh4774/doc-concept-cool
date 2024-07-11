@@ -1,6 +1,38 @@
 <script lang="ts">
 	import Navbar from '$lib/components/custom-components/Navbar.svelte';
 	import Footer from '$lib/components/custom-components/Footer.svelte';
+
+	import { onMount } from 'svelte';
+	import Swiper from 'swiper';
+
+	import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
+	import 'swiper/css';
+	import 'swiper/css/navigation';
+	import 'swiper/css/pagination';
+
+	let swiper;
+
+	onMount(() => {
+		swiper = new Swiper('.mySwiper', {
+			spaceBetween: 2,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			modules: [Autoplay, Navigation, Pagination]
+		});
+	});
+	import 'swiper/css';
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
@@ -90,7 +122,9 @@
 		<div class="swiper-pagination"></div>
 	</div>
 
-	<script>
+	<!-- <script>
+		import Swiper from 'swiper';
+
 		var swiper = new Swiper('.mySwiper', {
 			spaceBetween: 2,
 			centeredSlides: true,
@@ -107,6 +141,6 @@
 				prevEl: '.swiper-button-prev'
 			}
 		});
-	</script>
+	</script> -->
 	<Footer active="app" />
 </div>

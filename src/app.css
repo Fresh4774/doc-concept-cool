@@ -140,13 +140,12 @@
 	width: 85vw;
 }
 
-	  
 .swiper {
 	width: 100%;
 	height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	background: transparent;
@@ -154,16 +153,27 @@
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-  }
+}
 
 .nav {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	border: none;
+	outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #fff;
+}
+
+.swiper-pagination {
+	color: #fff;
+	fill: #fff;
 }
