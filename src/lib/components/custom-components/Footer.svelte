@@ -2,18 +2,25 @@
 	export let active;
 </script>
 
-<div
+<!-- <div
 	class="mb-2 mt-5 flex h-16 items-center gap-2 border-t-[1px] border-gray-700 bg-background px-2"
 >
 	<div
 		class="w-full flex-col items-center justify-around gap-6 text-lg font-medium md:flex md:flex-row md:gap-5 md:text-sm lg:gap-6"
+	> -->
+<div
+	class="my-5 flex items-center gap-2 border-t-[1px] border-gray-700 bg-background px-2 sm:h-auto md:h-16"
+>
+	<div
+		class="flex w-full flex-col items-center justify-around gap-6 text-lg font-medium max-sm:mt-3 sm:mt-6 sm:flex-row sm:gap-5 sm:text-sm lg:gap-6"
+		id="footer-container"
 	>
-		<div>
+		<div class="flex items-center justify-center gap-4">
 			<a href="/" class="flex items-center gap-2 text-lg font-semibold md:text-base">
 				<img src="/main.png" width="32" height="32" alt="Aquin logo" /> Aquin
 			</a>
 		</div>
-		<div class="flex items-center gap-4">
+		<div class="flex items-center justify-center gap-4 sm:w-auto">
 			<a href="/" class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -67,21 +74,24 @@
 				</svg>
 			</a>
 		</div>
-		<div class="flex items-center gap-6">
+		<div class="flex items-center justify-center gap-6 sm:w-auto">
 			<a
 				href="/tc"
-				class="mx-1 font-bold {active === 'tc' ? 'text-[#3887BE] underline' : ''} transition-colors"
-				>Terms & Conditions</a
+				class="mx-1 flex font-bold {active === 'tc'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">Terms & Conditions</a
 			>•
 			<a
 				href="/pp"
-				class="mx-1 font-bold {active === 'pp' ? 'text-[#3887BE] underline' : ''} transition-colors"
-				>Privacy Policy</a
+				class="mx-1 flex font-bold {active === 'pp'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">Privacy Policy</a
 			>•
 			<a
 				href="/cp"
-				class="mx-1 font-bold {active === 'cp' ? 'text-[#3887BE] underline' : ''} transition-colors"
-				>Cookie Policy</a
+				class="mx-1 flex font-bold {active === 'cp'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">Cookie Policy</a
 			>
 		</div>
 	</div>
