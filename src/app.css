@@ -86,3 +86,19 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+#main {
+	/* background-color: #4158d0;
+	background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); */
+	background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+
+	display: flex;
+	margin-left: 5svw;
+	margin-right: 5svw;
+	padding-top: 25svh;
+
+	justify-content: center;
+	/* align-items: center; */
+
+	height: 80svh;
+}

@@ -6,7 +6,7 @@
 	export let active;
 </script>
 
-<div class="sticky top-0 flex h-16 items-center gap-4 bg-background px-4 md:px-6">
+<div class="sticky top-0 flex h-16 items-center gap-2 bg-background px-2">
 	<nav
 		class="hidden w-full flex-col justify-around gap-6 text-lg font-medium md:flex md:flex-row md:gap-5 md:text-sm lg:gap-6"
 	>
