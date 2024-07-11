@@ -46,7 +46,7 @@
 		<div>
 			<a
 				href="/"
-				class="rounded-md bg-[#3887BE] p-2 px-4 text-sm font-bold text-white transition-colors"
+				class="rounded-md bg-[#fff] p-2 px-4 text-sm font-bold text-[#000] transition-colors"
 				>Login</a
 			>
 		</div>

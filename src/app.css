@@ -89,33 +89,49 @@
 }
 
 #main1 {
-	background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
-	display: flex;
-	margin-left: 5svw;
-	margin-right: 5svw;
-	padding-top: 25svh;
-	border-radius: 25px;
-	justify-content: center;
-	height: 85vh;
-	font-size: 14px;
-	width: 85vw;
+    /* You can add a background image after the gradient */
+    background-image: url('/main1.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the image */
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 25vh; /* Adjusted to use vh unit */
+    border-radius: 25px;
+    justify-content: center;
+    height: 85vh;
+    font-size: 14px;
+    width: 85vw;
 }
 
+.paragraph-width {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+    #video-container video {
+        border-radius: 25px; 
+    }
+
+	#video-container {
+        height: 85vh;
+    }
+
+
 #main2 {
-	background: linear-gradient(to right, #243748, #4b749f);
 	display: flex;
 	margin-left: 5svw;
 	margin-right: 5svw;
-	padding-top: 25svh;
 	border-radius: 25px;
 	justify-content: center;
+	align-items: center;
 	height: 85vh;
 	font-size: 14px;
 	width: 85vw;
 }
 
 #main3 {
-	background: linear-gradient(to right, #f0eafc, #61cef2, #f538b9);
+	background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 	display: flex;
 	margin-left: 5svw;
 	margin-right: 5svw;
@@ -128,13 +144,13 @@
 }
 
 #main4 {
-	background: linear-gradient(to right, #00ee6e, #0c75e6);
+	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 	display: flex;
 	margin-left: 5svw;
 	margin-right: 5svw;
-	padding-top: 25svh;
 	border-radius: 25px;
 	justify-content: center;
+	align-items: center;
 	height: 85vh;
 	font-size: 14px;
 	width: 85vw;
