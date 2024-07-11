@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: white;
+		}
+
+		--background: 0 0% 3%;
+		--foreground: 222.2 84% 4.9%;
+
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+
+		--primary: 0 0% 3%;
+		--primary-foreground: 210 40% 98%;
+
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
+
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+
+		--destructive: 0 72.2% 50.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		--ring: 222.2 84% 4.9%;
+
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 0 0% 3%;
+		--foreground: 210 40% 98%;
+
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+
+		--primary: 0 0% 3%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
+
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		--ring: hsl(212.7, 26.8%, 83.9);
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-family: 'ABeeZee', sans-serif;
+	}
+}
+
+#main1 {
+	background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+	display: flex;
+	margin-left: 5svw;
+	margin-right: 5svw;
+	padding-top: 25svh;
+	border-radius: 25px;
+	justify-content: center;
+	height: 85vh;
+	font-size: 14px;
+	width: 85vw;
+}
+
+#main2 {
+	background: linear-gradient(to right, #243748, #4b749f);
+	display: flex;
+	margin-left: 5svw;
+	margin-right: 5svw;
+	padding-top: 25svh;
+	border-radius: 25px;
+	justify-content: center;
+	height: 85vh;
+	font-size: 14px;
+	width: 85vw;
+}
+
+#main3 {
+	background: linear-gradient(to right, #f0eafc, #61cef2, #f538b9);
+	display: flex;
+	margin-left: 5svw;
+	margin-right: 5svw;
+	padding-top: 25svh;
+	border-radius: 25px;
+	justify-content: center;
+	height: 85vh;
+	font-size: 14px;
+	width: 85vw;
+}
+
+#main4 {
+	background: linear-gradient(to right, #00ee6e, #0c75e6);
+	display: flex;
+	margin-left: 5svw;
+	margin-right: 5svw;
+	padding-top: 25svh;
+	border-radius: 25px;
+	justify-content: center;
+	height: 85vh;
+	font-size: 14px;
+	width: 85vw;
+}
+
+	  
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+.nav {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	border: none;
+	outline: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	color: #fff;
+}
+
+.swiper-pagination {
+	color: #fff;
+	fill: #fff;
+}
