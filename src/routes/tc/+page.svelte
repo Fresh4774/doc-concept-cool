@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
-	<Navbar active="aquinpi" />
+	<Navbar active="tc" />
 	<main class="h-[75vh] flex w-full justify-center items-center">
 		<h1 class="text-9xl font-bold">Cooking...</h1>
 	</main>

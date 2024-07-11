@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Navbar from '$lib/components/custom-components/Navbar.svelte';
+	import Footer from '$lib/components/custom-components/Footer.svelte';
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
@@ -15,4 +16,5 @@
 			before!
 		</h3>
 	</main>
+	<Footer active="app" />
 </div>

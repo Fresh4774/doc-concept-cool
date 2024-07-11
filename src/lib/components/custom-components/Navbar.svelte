@@ -2,13 +2,12 @@
 	import Menu from 'lucide-svelte/icons/menu';
 	import { Button } from '$lib/components/ui/button/index';
 	import * as Sheet from '$lib/components/ui/sheet/index';
-
 	export let active;
 </script>
 
-<div class="sticky top-0 flex h-16 items-center gap-2 bg-background px-2">
+<div class="top-0 mb-2 flex h-16 items-center gap-2 bg-background px-2">
 	<nav
-		class="hidden w-full flex-col justify-around gap-6 text-lg font-medium md:flex md:flex-row md:gap-5 md:text-sm lg:gap-6"
+		class="hidden w-full flex-col items-center justify-around gap-6 text-lg font-medium md:flex md:flex-row md:gap-5 md:text-sm lg:gap-6"
 	>
 		<div>
 			<a href="/" class="flex items-center gap-2 text-lg font-semibold md:text-base">
@@ -17,25 +16,39 @@
 		</div>
 		<div class="flex items-center gap-6">
 			<!-- Adjusted here -->
-			<a href="/" class="mx-1 text-white {active === 'home' ? 'underline' : ''} transition-colors"
-				>AquinHub</a
+
+			<a
+				href="/"
+				class="mx-1 font-bold {active === 'home'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">AquinHub</a
 			>
-			<a href="/app" class="mx-1 text-white {active === 'app' ? 'underline' : ''} transition-colors"
-				>App</a
+			<a
+				href="/app"
+				class="mx-1 font-bold {active === 'app'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">App</a
 			>
 			<a
 				href="/aquinai"
-				class="mx-1 text-white {active === 'aquinai' ? 'underline' : ''} transition-colors"
-				>AquinAi</a
+				class="mx-1 font-bold {active === 'aquinai'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">AquinAi</a
 			>
 			<a
 				href="/aquinpi"
-				class="mx-1 text-white {active === 'aquinpi' ? 'underline' : ''} transition-colors"
-				>AquinPi</a
+				class="mx-1 font-bold {active === 'aquinpi'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors">AquinPi</a
 			>
 		</div>
-		<div class="flex items-center gap-2">
-			<a href="##" class="rounded-md bg-white px-2 py-1 text-black transition-colors">Login</a>
+
+		<div>
+			<a
+				href="/"
+				class="rounded-md bg-[#3887BE] p-2 px-4 text-sm font-bold text-white transition-colors"
+				>Login</a
+			>
 		</div>
 	</nav>
 	<Sheet.Root>
