@@ -6,7 +6,7 @@
 <div class="flex min-h-screen w-full flex-col">
 	<Navbar active="tc" />
 	<main class="flex h-[75vh] w-full items-center justify-center">
-		<h1 class="text-9xl font-bold">Cooking...</h1>
+		<h1 class="text-center text-9xl font-bold">Terms and Conditions</h1>
 	</main>
 	<Footer active="tc" />
 </div>
