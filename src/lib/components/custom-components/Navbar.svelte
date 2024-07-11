@@ -34,7 +34,7 @@
 				>AquinPi</a
 			>
 		</div>
-		<div>
+		<div class="flex items-center gap-2">
 			<a href="##" class="rounded-md bg-white px-2 py-1 text-black transition-colors">Login</a>
 		</div>
 	</nav>
