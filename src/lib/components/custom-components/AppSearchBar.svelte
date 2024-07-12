@@ -9,28 +9,28 @@
 
 	const features = [
 		{
-			value: 'chat',
+			value: 'aichat',
 			label: 'AI Chat'
 		},
 		{
-			value: 'call',
+			value: 'aivoicecall',
 			label: 'AI Voice Call'
 		},
 		{
-			value: 'image',
+			value: 'aiimagegenerator',
 			label: 'AI Image Generator'
 		},
 		{
-			value: 'commands',
+			value: 'utilitycommands',
 			label: 'Utility Commands'
 		},
-		{ value: 'pi', label: 'Aquin Pi' },
+		{ value: 'aquinpi', label: 'Aquin Pi' },
 		{
 			value: 'research',
 			label: 'Research'
 		},
 		{
-			value: 'yt-summarizer',
+			value: 'youtube-summarizer',
 			label: 'YouTube Summarizer'
 		},
 		{
@@ -69,13 +69,14 @@
 		</Button>
 	</Popover.Trigger>
 	<Popover.Content class="w-[200px] p-0">
-		<Command.Root>
+		<Command.Root class="bg-primary text-white">
 			<Command.Input placeholder="Search features..." />
 			<Command.Empty>No feature found.</Command.Empty>
 			<Command.Group>
 				{#each features as feature}
 					<Command.Item
 						value={feature.value}
+						class="text-white"
 						onSelect={(currentValue) => {
 							value = currentValue;
 							closeAndFocusTrigger(ids.trigger);

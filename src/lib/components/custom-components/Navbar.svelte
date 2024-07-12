@@ -15,7 +15,6 @@
 			</a>
 		</div>
 		<div class="flex items-center gap-6">
-
 			<a
 				href="/"
 				class="mx-1 font-bold {active === 'home'
@@ -52,10 +51,10 @@
 	</nav>
 	<Sheet.Root>
 		<Sheet.Trigger asChild let:builder>
-			<a href="/" class="md:hidden flex items-center gap-2 text-lg font-semibold md:text-base">
+			<a href="/" class="flex items-center gap-2 text-lg font-semibold md:hidden md:text-base">
 				<img src="/main.png" width="32" height="32" alt="Aquin logo" />
 			</a>
-			<div class="w-[75%] md:hidden" />
+			<div class="w-[100%] md:hidden" />
 			<Button size="icon" class="shrink-0 align-baseline md:hidden" builders={[builder]}>
 				<Menu class="h-5 w-5" />
 				<span class="sr-only">Menu</span>

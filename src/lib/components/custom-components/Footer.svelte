@@ -12,7 +12,7 @@
 	class="my-5 flex items-center gap-2 border-t-[1px] border-gray-700 bg-background px-2 sm:h-auto md:h-16"
 >
 	<div
-		class="flex w-full flex-col items-center justify-around gap-6 text-lg font-medium max-sm:mt-3 sm:mt-6 sm:flex-row sm:gap-5 sm:text-sm lg:gap-6"
+		class="flex w-full flex-col items-center justify-around gap-6 text-lg font-medium max-[820px]:flex-col max-sm:mt-3 sm:mt-6 sm:flex-row sm:gap-5 sm:text-sm lg:gap-6"
 		id="footer-container"
 	>
 		<div class="flex items-center justify-center gap-4">
@@ -129,3 +129,12 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	#footer-container {
+		@media screen and (max-width: 820px) {
+			margin-top: 10vh;
+			flex-direction: column;
+		}
+	}
+</style>
