@@ -89,14 +89,13 @@
 }
 
 #main1 {
-	/* You can add a background image after the gradient */
 	background-image: url('/main1.png');
-	background-size: cover; /* Ensures the image covers the entire background */
-	background-position: center; /* Center the image */
+	background-size: cover; 
+	background-position: center; 
 	display: flex;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	padding-top: 25vh; /* Adjusted to use vh unit */
+	padding-top: 25vh; 
 	border-radius: 25px;
 	justify-content: center;
 	height: 85vh;
@@ -104,9 +103,15 @@
 }
 
 .paragraph-width {
-	max-width: 600px;
+	max-width: 500px;
 	margin: 0 auto;
 }
+
+@media (max-width: 640px) {
+	.paragraph-width {
+	  max-width: 315px;
+	}
+  }
 
 #video-container video {
 	border-radius: 25px;
@@ -150,6 +155,63 @@
 	height: 85vh;
 	width: 85vw;
 	font-size: 14px;
+
+	background: linear-gradient(to right, 
+    #ff0000, 
+    #ff6666, 
+    #ff3333, 
+    #ff4d4d, 
+    #ff7f00, 
+    #ff9966, 
+    #ff8c33, 
+    #ffae4d, 
+    #ffff00, 
+    #ffff66, 
+    #ffff33, 
+    #ffff4d, 
+    #7fff00, 
+    #aaff66, 
+    #8cff33, 
+    #b3ff4d, 
+    #00ff00, 
+    #66ff66, 
+    #33ff33, 
+    #4dff4d, 
+    #00ff7f, 
+    #66ff99, 
+    #33ff8c, 
+    #4dffae, 
+    #00ffff, 
+    #66ffff, 
+    #33ffff, 
+    #4dffff, 
+    #007fff, 
+    #6699ff, 
+    #338cff, 
+    #4db3ff, 
+    #0000ff, 
+    #6666ff, 
+    #3333ff, 
+    #4d4dff, 
+    #7f00ff, 
+    #9966ff, 
+    #8c33ff, 
+    #ae4dff, 
+    #ff00ff, 
+    #ff66ff, 
+    #ff33ff, 
+    #ff4dff
+);
+
+	background-size: 2000% 2000%;
+	animation: gradientAnimation 30s ease infinite;
+	overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 #main4 {
@@ -187,17 +249,13 @@
 }
 
 .nav {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: background-color 0.2s ease-in-out;
 	border: none;
 	outline: none;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-	color: #fff;
-}
-
-.swiper-pagination {
-	color: #fff;
-	fill: #fff;
 }

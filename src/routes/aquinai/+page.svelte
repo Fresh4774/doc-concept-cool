@@ -8,7 +8,7 @@
 	<main class="flex w-full items-center justify-center">
 		<main id="aquinai">
 			<div>
-				<h1 class="mb-4 text-center text-9xl font-bold max-sm:text-6xl">AquinAi</h1>
+				<h1 class="anitxt mb-4 text-center text-9xl font-bold max-sm:text-5xl">AquinAi</h1>
 				<div>
 					<p class="paragraph-width text-center">
 						AquinAI is your ultimate personal assistant, designed for efficiency and ease. With fast
@@ -23,7 +23,7 @@
 						<a
 							href="/aquinai"
 							class="rounded-[30px] bg-[#fff] p-2 px-10 text-center text-lg text-[#000] transition-colors"
-							>More information coming soon...</a
+							>More coming soon</a
 						>
 					</div>
 				</div>

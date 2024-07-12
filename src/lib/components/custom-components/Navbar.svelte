@@ -15,7 +15,6 @@
 			</a>
 		</div>
 		<div class="flex items-center gap-6">
-			<!-- Adjusted here -->
 
 			<a
 				href="/"
@@ -45,22 +44,25 @@
 
 		<div>
 			<a
-				href="/"
-				class="rounded-md bg-[#3887BE] p-2 px-4 text-sm font-bold text-white transition-colors"
+				href="https://app.aquin.app"
+				class="rounded-md bg-[#fff] p-2 px-4 text-sm font-bold text-[#000] transition-colors"
 				>Login</a
 			>
 		</div>
 	</nav>
 	<Sheet.Root>
 		<Sheet.Trigger asChild let:builder>
+			<a href="/" class="md:hidden flex items-center gap-2 text-lg font-semibold md:text-base">
+				<img src="/main.png" width="32" height="32" alt="Aquin logo" />
+			</a>
+			<div class="w-[75%] md:hidden" />
 			<Button size="icon" class="shrink-0 align-baseline md:hidden" builders={[builder]}>
 				<Menu class="h-5 w-5" />
 				<span class="sr-only">Menu</span>
 			</Button>
 		</Sheet.Trigger>
 		<Sheet.Content side="top" class="nav">
-			<nav class="grid gap-6 text-lg font-medium">
-				<!-- <Package2 class="mb-6 h-6 w-6 text-white" /> -->
+			<nav class="grid gap-4 text-lg font-medium">
 				<img src="/main.png" width="32" height="32" alt="Aquin logo" />
 				<a href="/" class="mx-1 text-white transition-colors">AquinHub</a>
 				<a href="/app" class="mx-1 text-white transition-colors">App</a>

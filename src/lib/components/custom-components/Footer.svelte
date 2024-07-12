@@ -21,7 +21,11 @@
 			</a>
 		</div>
 		<div class="flex items-center justify-center gap-4 sm:w-auto">
-			<a href="/" class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors">
+			<a
+				href="https://www.youtube.com/@AquinF03/featured"
+				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				target="_blank"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="#fff"
@@ -34,7 +38,11 @@
 					></path>
 				</svg>
 			</a>•
-			<a href="/" class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors">
+			<a
+				href="https://x.com/AquinF03"
+				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				target="_blank"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="#fff"
@@ -47,7 +55,11 @@
 					></path>
 				</svg>
 			</a>•
-			<a href="/" class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors">
+			<a
+				href="https://www.instagram.com/aquinf03/"
+				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				target="_blank"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="#fff"
@@ -60,7 +72,11 @@
 					></path>
 				</svg>
 			</a>•
-			<a href="/" class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors">
+			<a
+				href="https://discord.com/invite/suhwwzuAaX"
+				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				target="_blank"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="#fff"
@@ -74,25 +90,42 @@
 				</svg>
 			</a>
 		</div>
-		<div class="flex items-center justify-center gap-6 sm:w-auto">
+		<div class="flex flex-col items-center justify-center gap-1 sm:w-auto sm:flex-row sm:gap-6">
 			<a
 				href="/tc"
 				class="mx-1 flex font-bold {active === 'tc'
 					? 'text-[#3887BE] underline'
-					: ''} transition-colors">Terms & Conditions</a
-			>•
+					: ''} transition-colors"
+			>
+				Terms & Conditions
+			</a>
+			•
 			<a
 				href="/pp"
 				class="mx-1 flex font-bold {active === 'pp'
 					? 'text-[#3887BE] underline'
-					: ''} transition-colors">Privacy Policy</a
-			>•
+					: ''} transition-colors"
+			>
+				Privacy Policy
+			</a>
+			•
 			<a
 				href="/cp"
 				class="mx-1 flex font-bold {active === 'cp'
 					? 'text-[#3887BE] underline'
-					: ''} transition-colors">Cookie Policy</a
+					: ''} transition-colors"
 			>
+				Cookie Policy
+			</a>
+			•
+			<a
+				href="/cp"
+				class="mx-1 flex font-bold {active === 'cp'
+					? 'text-[#3887BE] underline'
+					: ''} transition-colors"
+			>
+				Aquin © 2023–2024
+			</a>
 		</div>
 	</div>
 </div>
