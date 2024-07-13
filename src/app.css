@@ -4,7 +4,7 @@
 
 @layer base {
 	:root {
-		p,
+		/* p,
 		h1,
 		h2,
 		h3,
@@ -12,7 +12,7 @@
 		h5,
 		h6 {
 			color: white;
-		}
+		} */
 
 		--background: 0 0% 3%;
 		--foreground: 222.2 84% 4.9%;

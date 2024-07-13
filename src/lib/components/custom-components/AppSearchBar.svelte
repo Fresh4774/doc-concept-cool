@@ -9,33 +9,35 @@
 
 	const features = [
 		{
-			value: 'aichat',
+			value: 'AI Chat',
+			section: 'aichat',
 			label: 'AI Chat'
 		},
 		{
-			value: 'aivoicecall',
+			value: 'AI Voice Call',
+			section: 'aivoice',
 			label: 'AI Voice Call'
 		},
 		{
-			value: 'aiimagegenerator',
+			value: 'AI Image Generator',
+			section: 'aiimage',
 			label: 'AI Image Generator'
 		},
 		{
-			value: 'utilitycommands',
+			value: 'Utility Commands',
+			section: 'utilitycommands',
 			label: 'Utility Commands'
 		},
-		{ value: 'aquinpi', label: 'Aquin Pi' },
+		// { value: 'Aquin Pi', section: 'aquinpi', label: 'Aquin Pi' },
 		{
-			value: 'research',
+			value: 'Research',
+			section: 'research',
 			label: 'Research'
 		},
 		{
-			value: 'youtube-summarizer',
+			value: 'YouTube Summarizer',
+			section: 'yt-summarizer',
 			label: 'YouTube Summarizer'
-		},
-		{
-			value: 'accessibility',
-			label: 'Accessibilty'
 		}
 	];
 
@@ -52,6 +54,14 @@
 		tick().then(() => {
 			document.getElementById(triggerId)?.focus();
 		});
+	}
+
+	// Function to scroll to the section with the given ID
+	function scrollToSection(sectionId: string) {
+		const sectionElement = document.getElementById(sectionId);
+		if (sectionElement) {
+			sectionElement.scrollIntoView({ behavior: 'smooth' });
+		}
 	}
 </script>
 
@@ -80,7 +90,7 @@
 						onSelect={(currentValue) => {
 							value = currentValue;
 							closeAndFocusTrigger(ids.trigger);
-							window.location.href = `/app#${feature.value}`;
+							scrollToSection(feature.section);
 						}}
 					>
 						<Check class={cn('mr-2 h-4 w-4', value !== feature.value && 'text-transparent')} />
