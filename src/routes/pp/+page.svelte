@@ -1,11 +1,8 @@
 <script lang="ts">
-	import Navbar from '$lib/components/custom-components/Navbar.svelte';
-	import Footer from '$lib/components/custom-components/Footer.svelte';
 	import "./pp.css";
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
-	<Navbar active="pp" />
 	<main class="my-5">
 		<div class="privacypolicy">
 			<h1>Privacy Policy</h1>
@@ -493,5 +490,4 @@
   
 		  </div>
 	</main>
-	<Footer active="pp" />
 </div>

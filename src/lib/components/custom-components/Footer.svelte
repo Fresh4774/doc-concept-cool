@@ -1,15 +1,8 @@
 <script lang="ts">
 	export let active;
 </script>
-
-<!-- <div
-	class="mb-2 mt-5 flex h-16 items-center gap-2 border-t-[1px] border-gray-700 bg-background px-2"
->
-	<div
-		class="w-full flex-col items-center justify-around gap-6 text-lg font-medium md:flex md:flex-row md:gap-5 md:text-sm lg:gap-6"
-	> -->
 <div
-	class="my-5 flex items-center gap-2 border-t-[1px] border-gray-700 bg-background px-2 sm:h-auto md:h-16"
+	class="my-5 flex items-center gap-2 border-t-[1px] border-gray-700 bg-transparent px-2 sm:h-auto md:h-16"
 >
 	<div
 		class="flex w-full flex-col items-center justify-around gap-6 text-lg font-medium max-[820px]:flex-col max-sm:mt-3 sm:mt-6 sm:flex-row sm:gap-5 sm:text-sm lg:gap-6"
@@ -23,12 +16,12 @@
 		<div class="flex items-center justify-center gap-4 sm:w-auto">
 			<a
 				href="https://www.youtube.com/@AquinF03/featured"
-				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				class="rounded-md p-2 px-4 text-sm font-bold text-[#fefefe] transition-colors"
 				target="_blank"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					fill="#fff"
+					fill="#fefefe"
 					width="21"
 					height="21"
 					viewBox="0 0 50 50"
@@ -40,12 +33,12 @@
 			</a>•
 			<a
 				href="https://x.com/AquinF03"
-				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				class="rounded-md p-2 px-4 text-sm font-bold text-[#fefefe] transition-colors"
 				target="_blank"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					fill="#fff"
+					fill="#fefefe"
 					width="21"
 					height="21"
 					viewBox="0 0 30 30"
@@ -57,12 +50,12 @@
 			</a>•
 			<a
 				href="https://www.instagram.com/aquinf03/"
-				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				class="rounded-md p-2 px-4 text-sm font-bold text-[#fefefe] transition-colors"
 				target="_blank"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					fill="#fff"
+					fill="#fefefe"
 					width="21"
 					height="21"
 					viewBox="0 0 50 50"
@@ -74,12 +67,12 @@
 			</a>•
 			<a
 				href="https://discord.com/invite/suhwwzuAaX"
-				class="rounded-md p-2 px-4 text-sm font-bold text-white transition-colors"
+				class="rounded-md p-2 px-4 text-sm font-bold text-[#fefefe] transition-colors"
 				target="_blank"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					fill="#fff"
+					fill="#fefefe"
 					width="21"
 					height="21"
 					viewBox="0 0 50 50"

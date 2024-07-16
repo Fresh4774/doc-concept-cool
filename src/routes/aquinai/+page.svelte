@@ -1,10 +1,7 @@
 <script lang="ts">
-	import Navbar from '$lib/components/custom-components/Navbar.svelte';
-	import Footer from '$lib/components/custom-components/Footer.svelte';
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
-	<Navbar active="aquinai" />
 	<main class="flex w-full items-center justify-center">
 		<main id="aquinai">
 			<div>
@@ -22,7 +19,7 @@
 					<div class="flex justify-center gap-4">
 						<a
 							href="/aquinai"
-							class="rounded-[30px] bg-[#fff] p-2 px-10 text-center text-lg text-[#000] transition-colors"
+							class="rounded-[30px] bg-[#fefefe] p-2 px-10 text-center text-lg text-[#000] transition-colors"
 							>More coming soon</a
 						>
 					</div>
@@ -30,5 +27,4 @@
 			</div>
 		</main>
 	</main>
-	<Footer active="app" />
 </div>

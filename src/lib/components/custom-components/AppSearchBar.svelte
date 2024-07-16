@@ -79,14 +79,14 @@
 		</Button>
 	</Popover.Trigger>
 	<Popover.Content class="w-[200px] p-0">
-		<Command.Root class="bg-primary text-white">
+		<Command.Root class="bg-[#000000] text-[#fefefe]">
 			<Command.Input placeholder="Search features..." />
 			<Command.Empty>No feature found.</Command.Empty>
 			<Command.Group>
 				{#each features as feature}
 					<Command.Item
 						value={feature.value}
-						class="text-white"
+						class="text-[#fefefe]"
 						onSelect={(currentValue) => {
 							value = currentValue;
 							closeAndFocusTrigger(ids.trigger);

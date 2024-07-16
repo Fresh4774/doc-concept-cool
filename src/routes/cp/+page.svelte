@@ -1,11 +1,8 @@
 <script lang="ts">
-	import Navbar from '$lib/components/custom-components/Navbar.svelte';
-	import Footer from '$lib/components/custom-components/Footer.svelte';
 	import './cp.css';
 </script>
 
 <div class="flex min-h-screen w-full flex-col">
-	<Navbar active="cp" />
 	<main class="my-5">
 		<div class="cookiePolicy">
 			<h1>Cookie Policy</h1>
@@ -214,5 +211,4 @@
 			</p>
 		</div>
 	</main>
-	<Footer active="cp" />
 </div>
